@@ -57,3 +57,8 @@ La clase que se creo para este punto fue BlackListThread()
 **Bono**
 
 Haga que también imprima el número TOTAL de registros revisados en las listas de todos los hilos, es decir, imprimir el número de listas negras revisadas VS. el número de listas negras total(80,000). Se debe garantizar que dicha información sea verídica bajo el nuevo esquema de procesamiento en paralelo planteado.
+![image](https://github.com/user-attachments/assets/e6fe6709-9d27-4c95-81b7-e492bc9367bd)
+
+
+![image](https://github.com/user-attachments/assets/126720f0-e03f-4e76-ab7f-6f26a0438ff8)
+
