@@ -3,6 +3,8 @@
 ### Arquitecturas de Software - ARSW
 ## Parcial 1 - Paralelismo - Hilos - Caso BlackListSearch
 
+##Paula Natalia Paez Vega
+
 ### Descripción
   Este es un ejercicio de programación con hilos en Java, que permite su aplicación a un caso concreto.
   
@@ -34,7 +36,14 @@ Para 'refactorizar' este código, y hacer que explote la capacidad multi-núcleo
 
 1. Cree una clase de tipo Thread que represente el ciclo de vida de un hilo que haga la búsqueda de un segmento del conjunto de servidores disponibles.
 
+La clase que se creo para este punto fue BlackListThread()
+
+![image](https://github.com/user-attachments/assets/ed7e6d7e-893c-4c65-b656-cfa3ae3c9443)
+
 2. Agregue al método 'checkHost' un parámetro entero N, correspondiente al número de hilos entre los que se va a realizar la búsqueda (recuerde tener en cuenta si N es par o impar!). Modifique el código de este método para que divida el espacio de búsqueda entre las N partes indicadas, y paralelice la búsqueda a través de N hilos.
+
+![image](https://github.com/user-attachments/assets/c7f6219d-84c4-406d-b6d7-5118851f0f42)
+
 
 3. Haga que entre TODOS los hilos lleven la cuenta de las ocurrencias de la IP que se han detectado en TOTAL y una vez se cumpla el número objetivo (_BLACK_LIST_ALARM_COUNT_), deben finalizar el procesamiento TODOS los hilos, luego debe reportar el host como confiable o no confiable. Tenga también en cuenta:  
 
