@@ -56,12 +56,6 @@ public class HostBlackListsValidator {
             }
         }
 
-        if (total.get() >= BLACK_LIST_ALARM_COUNT) {
-            System.out.println("INFO: HOST " + ipaddress + " Reported as NOT trustworthy");
-        } else {
-            System.out.println("INFO: HOST " + ipaddress + " Reported as trustworthy");
-        }
-
         System.out.println("Total black lists checked: " + indices.size() + " / " + TOTAL_BLACK_LISTS);
    
 
@@ -86,9 +80,14 @@ public class HostBlackListsValidator {
 
         if (ocurrencesCount>=BLACK_LIST_ALARM_COUNT){
             skds.reportAsNotTrustworthy(ipaddress);
+            
+            System.out.println("INFO: HOST " + ipaddress + " Reported AS NOT trustworthy");
+
         }
         else{
             skds.reportAsTrustworthy(ipaddress);
+
+            System.out.println("INFO: HOST " + ipaddress + " Reported AS trustworthy");
         }
 
         
